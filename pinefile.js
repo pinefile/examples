@@ -5,4 +5,5 @@ module.exports = {
   delay: require('./tasks/delay'),
   plugins: require('./tasks/plugins'),
   test: require('./tasks/test'),
+  watch: require('./tasks/watch'),
 };
