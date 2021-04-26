@@ -1,6 +1,6 @@
 # Pine examples
 
-Examples of Pine
+Examples of Pine tasks
 
 ## License
 
