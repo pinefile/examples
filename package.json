@@ -4,12 +4,14 @@
   "description": "Pine examples",
   "main": "index.js",
   "scripts": {
-    "pine": "pine"
+    "pine": "pine",
+    "test": "echo \"testing..\""
   },
   "author": "Fredrik Forsmo <fredrik.forsmo@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@pinefile/pine": "^1.0.0-alpha.23",
+    "@pinefile/pine": "^1.0.0-alpha.28",
+    "@pinefile/runner-npm": "^1.0.0-alpha.28",
     "chokidar": "^3.5.1"
   }
 }

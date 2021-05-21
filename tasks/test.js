@@ -1,5 +1,5 @@
 const { run } = require('@pinefile/pine');
 
 module.exports = {
-  default: async () => await run('just'),
+  default: async () => await run('jest'),
 };
