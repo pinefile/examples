@@ -10,8 +10,8 @@
   "author": "Fredrik Forsmo <fredrik.forsmo@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@pinefile/pine": "^1.0.0",
-    "@pinefile/runner-npm": "^1.0.0",
+    "@pinefile/pine": "^1.0.1",
+    "@pinefile/runner-npm": "^1.0.1",
     "chokidar": "^3.5.2"
   }
 }
