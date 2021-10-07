@@ -1,4 +1,4 @@
-const { configure, log } = require('@pinefile/pine');
+const { configure, log, filterArgs } = require('@pinefile/pine');
 
 configure({
   options: {
@@ -9,7 +9,10 @@ configure({
 });
 
 module.exports = {
-  build: (argv) => {
-    log.info(`Building: ${argv.format}`);
+  build: (args) => {
+    log.info(`Building: ${args.format}`);
+  },
+  filter: (args) => {
+    log.info(`Filter: ${JSON.stringify(filterArgs(args), null, 2)}`);
   },
 };
