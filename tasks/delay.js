@@ -1,4 +1,4 @@
-const { log } = require('@pinefile/pine/dist');
+const { log } = require('@pinefile/pine');
 
 const delay = (time) => new Promise((res) => setTimeout(res, time));
 
