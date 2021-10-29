@@ -12,6 +12,8 @@
   "dependencies": {
     "@pinefile/pine": "^1.0.2",
     "@pinefile/runner-npm": "^1.0.2",
-    "chokidar": "^3.5.2"
+    "chokidar": "^3.5.2",
+    "glob": "^7.2.0",
+    "inquirer": "^8.2.0"
   }
 }

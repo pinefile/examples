@@ -1,9 +1,12 @@
-const { log, run } = require('@pinefile/pine');
+const glob = require('glob');
 
-module.exports = {
-  args: require('./tasks/args'),
-  delay: require('./tasks/delay'),
-  plugins: require('./tasks/plugins'),
-  test: require('./tasks/test'),
-  watch: require('./tasks/watch'),
-};
+const tasks = glob
+  .sync('./tasks/*.js', {
+    ignore: './tasks/utils.js',
+  })
+  .reduce((prev, cur) => {
+    const name = cur.split('/').pop().replace('.js', '');
+    return { ...prev, [name]: require(cur) };
+  }, {});
+
+module.exports = tasks;
