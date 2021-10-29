@@ -9,12 +9,7 @@ module.exports = {
         name: 'fileName',
         message: 'File name',
         default: args._.length ? args._[0] : '',
-        validate: async (x) => {
-          if (!x) {
-            return 'Cannot be empty';
-          }
-          return true;
-        },
+        validate: (x) => (!x ? 'Cannot be empty' : true),
       },
     ];
 
