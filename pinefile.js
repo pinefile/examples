@@ -1,4 +1,9 @@
+const { configure } = require('@pinefile/pine');
 const glob = require('glob');
+
+configure({
+  logger: require('@jitesoft/yolog/node').logger,
+});
 
 const tasks = glob
   .sync('./tasks/*.js', {
