@@ -1,10 +1,8 @@
-const { log } = require('@pinefile/pine');
-const { watch } = require('../plugins/watch');
+import { log } from '@pinefile/pine';
+import { watch } from '../plugins/watch';
 
-module.exports = {
-  default: async () => {
-    await watch('src/*.js', () => {
-      log.info('File changed');
-    });
-  },
+export default () => async () => {
+  await watch('src/*.js', () => {
+    log.info('File changed');
+  });
 };

@@ -1,6 +1,6 @@
-const { echo } = require('../plugins/echo');
+import { echo } from '../plugins/echo';
 
-module.exports = {
+export default {
   build: () => {
     echo(`Building...`);
   },

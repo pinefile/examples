@@ -1,5 +1,3 @@
-const { run } = require('@pinefile/pine');
+import { run } from '@pinefile/pine';
 
-module.exports = {
-  default: async () => await run('jest'),
-};
+export default () => async () => await run('jest');

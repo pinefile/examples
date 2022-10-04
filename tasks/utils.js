@@ -1,7 +1,4 @@
-const { shell } = require('@pinefile/pine');
+import { shell } from '@pinefile/pine';
 
-const getLatestCommitID = async () => shell(`git rev-parse --short HEAD`);
-
-module.exports = {
-  getLatestCommitID,
-};
+export const getLatestCommitID = async () =>
+  shell(`git rev-parse --short HEAD`);
