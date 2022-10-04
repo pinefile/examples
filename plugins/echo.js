@@ -1,3 +1,1 @@
-module.exports = {
-  echo: console.log,
-};
+export const echo = console.log;

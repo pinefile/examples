@@ -1,7 +1,7 @@
-const { log } = require('@pinefile/pine');
-const chokidar = require('chokidar');
+import { log } from '@pinefile/pine';
+import chokidar from 'chokidar';
 
-const watch = (dirs, cb) => {
+export const watch = (dirs, cb) => {
   return new Promise((resolve, reject) => {
     const files =
       typeof dirs === 'string' ? [dirs] : Array.isArray(dirs) ? dirs : [];
@@ -23,8 +23,4 @@ const watch = (dirs, cb) => {
       reject(error);
     });
   });
-};
-
-module.exports = {
-  watch,
 };

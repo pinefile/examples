@@ -1,10 +1,10 @@
-const { configure, log } = require('@pinefile/pine');
+import { configure, log } from '@pinefile/pine';
 
 configure({
   runner: '@pinefile/runner-npm',
 });
 
-module.exports = {
+export default {
   hello: () => {
     log.info('hello task is not in package.json');
   },
