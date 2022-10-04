@@ -11,10 +11,10 @@
   "license": "MIT",
   "dependencies": {
     "@jitesoft/yolog": "^3.2.1",
-    "@pinefile/pine": "^1.5.0",
-    "@pinefile/runner-npm": "^1.4.2",
+    "@pinefile/pine": "^2.0.1",
+    "@pinefile/runner-npm": "^2.0.1",
     "chokidar": "^3.5.3",
-    "glob": "^7.2.0",
-    "inquirer": "^8.2.0"
+    "glob": "^8.0.3",
+    "inquirer": "^9.1.2"
   }
 }
