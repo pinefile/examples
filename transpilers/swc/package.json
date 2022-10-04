@@ -1,0 +1,12 @@
+{
+  "name": "pine-examples-swc",
+  "pine": {
+    "esbuild": false,
+    "require": [
+      "@swc-node/register"
+    ]
+  },
+  "devDependencies": {
+    "@swc-node/register": "^1.3.6"
+  }
+}

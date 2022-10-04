@@ -1,4 +1,4 @@
-import { configure, log, filterArgs } from '@pinefile/pine';
+import { configure, log, filterArgs, getConfig } from '@pinefile/pine';
 
 configure({
   options: {
