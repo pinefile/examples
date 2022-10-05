@@ -1,8 +1,8 @@
-import { configure, log, filterArgs, getConfig } from '@pinefile/pine';
+import { log, filterArgs, getConfig } from '@pinefile/pine';
 
 export default {
   default: (args) => {
-    console.log(args);
+    log.info(args);
   },
   build: (args) => {
     log.info(`Building: ${args.format || 'esm'}`);
