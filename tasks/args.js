@@ -1,4 +1,4 @@
-import { log, filterArgs, getConfig } from '@pinefile/pine';
+import { log, filterArgs } from '@pinefile/pine';
 
 export default {
   default: (args) => {
